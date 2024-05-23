@@ -1,5 +1,7 @@
 Fix "wget" links
+
 Fix mysql_mariadb-installer.sh
+
   ERROR: No su program found on this device. Termux
   does not supply tools for rooting, see e.g.             http://www.androidcentral.com/root for
   information about rooting Android.                      mysql: Deprecated program name. It will be removed in a future release, use '/data/data/com.termux/files/usr/bin/mariadb' instead                                       ERROR 2002 (HY000): Can't connect to local server through socket '/data/data/com.termux/files/usr/var/run/mysqld.sock' (2)
@@ -8,6 +10,8 @@ Fix mysql_mariadb-installer.sh
   3.sh: line 36: `set password for 'root'@'localhost' = password('981224');'
   
 Fix apache2-installer.sh
+
+Fix DesktopEnvironment>gnome
   ERROR: 4.sh: line 12: cd: /var/www/html: No such file or directory
   rm: cannot remove 'index.html': No such file or directory                                 4.sh: line 15: cd: OLDPWD not set
                                 
