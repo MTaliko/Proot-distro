@@ -91,43 +91,5 @@ echo "Termux components already cofigurated"
 echo ""
 echo ""
 echo ""
-sleep 20
-clear
-echo ""
-echo ""
-echo ""
-echo "Ubuntu install"
-echo ""
-echo ""
-echo ""
-echo "Get ubuntu and install"
-hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh
-echo ""
-echo ""
-echo ""
-echo "Installation ended"
-echo ""
-echo ""
-echo ""
-clear
-echo ""
-echo ""
-echo ""
-echo "use command nano start-ubuntu.sh and add this line after "dev""
-echo ""
-echo ""
-echo "command+=" -b /dev/null:/proc/sys/kernel/cap_last_cap""
-echo ""
-echo ""
-echo ""
-sleep 20
-nano start-ubuntu.sh
 sleep 15
-echo ""
-echo ""
-echo ""
-echo "open Ubuntu with ./start-ubuntu.sh"
-./start-ubuntu.sh
-echo ""
-echo ""
-echo ""
+clear
