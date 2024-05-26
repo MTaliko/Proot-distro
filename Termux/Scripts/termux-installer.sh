@@ -12,7 +12,7 @@ echo "Install openssl-tool proot"
 echo ""
 echo ""
 echo ""
-sleep 15
+sleep 10
 pkg install x11-repo -y
 pkg install curl nano vim-gtk -y
 pkg install tur-repo php openssh git -y
@@ -29,7 +29,7 @@ echo "Installed python python2 python3 Ok!"
 echo ""
 echo ""
 echo ""
-sleep 15
+sleep 10
 clear
 echo ""
 echo ""
@@ -48,7 +48,7 @@ echo "openssh-key generated Ok!"
 echo ""
 echo ""
 echo ""
-sleep 15
+sleep 10
 clear
 echo ""
 echo ""
@@ -58,12 +58,13 @@ echo ""
 echo ""
 echo ""
 echo "make gitprojects directory"
-echo "mkdir gitprojects"
+echo "used commands"
+echo "- mkdir gitprojects"
 mkdir gitprojects
-echo "git config --global user.email 'chr.str159@gmail.com'"
+echo "- git config --global user.email 'chr.str159@gmail.com'"
 git config --global user.email "chr.str159@gmail.com"
-echo "git config --global user.name '13MTaliko'"
-echo "git config --global user.email 'chr.str159@gmail.com'"
+echo "- git config --global user.name '13MTaliko'"
+echo "- git config --global user.email 'chr.str159@gmail.com'"
 git config --global user.name "13MTaliko"
 git config --global core.editor "nano"
 echo ""
@@ -73,7 +74,7 @@ echo "config git Ok!"
 echo ""
 echo ""
 echo ""
-sleep 15
+sleep 10
 clear
 echo ""
 echo ""
@@ -90,7 +91,7 @@ echo "Termux components already cofigurated"
 echo ""
 echo ""
 echo ""
-sleep 30
+sleep 20
 clear
 echo ""
 echo ""
@@ -119,7 +120,7 @@ echo "command+=" -b /dev/null:/proc/sys/kernel/cap_last_cap""
 echo ""
 echo ""
 echo ""
-sleep 30
+sleep 20
 nano start-ubuntu.sh
 sleep 15
 echo ""
@@ -130,16 +131,3 @@ echo "open Ubuntu with ./start-ubuntu.sh"
 echo ""
 echo ""
 echo ""
-sleep 5
-clear
-echo "config .bashrc"
-rm .bashrc
-cp /etc/skel/.bashrc .
-sed -i 's/32/31/g' .bashrc
-logout
-sleep 5
-./start-ubuntu.sh
-sleep 5
-clear
-echo "Update and dist-upgrade"
-apt update && apt-get dist-upgrade -y
